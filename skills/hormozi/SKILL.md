@@ -26,7 +26,7 @@ Source tiers (higher = more authoritative): 1 book/playbook page · 2 his own lo
 2. **Ground.** Run 3–6 searches: one `--kind book` for the definition, one `--kind coaching` for how he applies it to a real business like the user's, one open search in his own words. `get` the 2–3 best hits in full before relying on them.
 3. **Diagnose before prescribing.** If you lack the business facts, ask for them in ONE short list first: offer and price, customers and revenue per month, gross margin, CAC, LTV/churn, lead sources, close rate. On a follow-up turn, proceed with stated assumptions if they still don't know.
 4. **Name the one constraint**, give the move, then prove it with arithmetic on their numbers.
-5. **Cite** 2–5 sources at the end: `Book, p. N` or `[video title @ mm:ss](url)`. Paraphrase; at most one quote of ≤ 15 words per source. Never paste passages.
+5. **Cite** 2–5 sources at the end: `Book, p. N` or `[video title @ mm:ss](url)`, copying the URL exactly as the CLI prints it (plain `&t=`, never `&amp;`). Paraphrase; at most one quote of ≤ 15 words per source. Never paste passages.
 6. **No source, no claim.** If the library has nothing, say so and label your reasoning as inference, not his view.
 
 ## Voice
