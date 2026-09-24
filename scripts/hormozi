@@ -11,9 +11,13 @@ if a.cmd == "stats":
 STOP = set("a an the and or but of to in on for with is are was be how do i my me we you your what why when should can it this that at as by from".split())
 terms = [t for t in re.findall(r"[a-z0-9$%']+", " ".join(a.q).lower()) if t not in STOP]
 if not terms: sys.exit("no search terms")
-match = " OR ".join(f'"{t}"' for t in terms)
 src = {"youtube": "%YouTube%", "course": "%course%", "book": "%Book%"}.get(a.source, "%")
-q = ("SELECT source, title, date, url, snippet(chunks, 4, '**', '**', ' … ', 60) FROM chunks "
+q = ("SELECT rowid, source, title, date, url, snippet(chunks, 4, '**', '**', ' … ', 60) FROM chunks "
      "WHERE chunks MATCH ? AND source LIKE ? ORDER BY bm25(chunks, 0, 2.0, 0, 0, 1.0) LIMIT ?")
-for i, (s, t, d, u, snip) in enumerate(db.execute(q, (match, src, a.n)), 1):
+seen, titles, out = set(), set(), []
+for joiner in (" AND ", " OR "):                      # all-terms matches first, then any-term top-up
+    for r in db.execute(q, (joiner.join(f"\"{t}\"" for t in terms), src, a.n * 3)):
+        key = re.sub(r'\\W', '', r[2].lower())
+        if r[0] not in seen and key not in titles and len(out) < a.n: seen.add(r[0]); titles.add(key); out.append(r)
+for i, (_, s, t, d, u, snip) in enumerate(out, 1):
     print(f"[{i}] {t}\n    {s}{' · ' + d if d else ''}\n    {u}\n    {snip}\n")
