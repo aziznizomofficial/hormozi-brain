@@ -1,23 +1,4 @@
-#!/usr/bin/env python3
-"""hormozi search "<question or keywords>" [-n 8] [--source youtube|course|book]"""
-import sqlite3, sys, re, pathlib, argparse
-DB = pathlib.Path(__file__).resolve().parent.parent / "index" / "hormozi.db"
-ap = argparse.ArgumentParser(); ap.add_argument("cmd", choices=["search", "stats"]); ap.add_argument("q", nargs="*")
-ap.add_argument("-n", type=int, default=8); ap.add_argument("--source", default="")
-a = ap.parse_args(); db = sqlite3.connect(DB)
-if a.cmd == "stats":
-    for s, n in db.execute("SELECT source, count(*) FROM chunks GROUP BY source"): print(f"{n:7}  {s}")
-    sys.exit()
-STOP = set("a an the and or but of to in on for with is are was be how do i my me we you your what why when should can it this that at as by from".split())
-terms = [t for t in re.findall(r"[a-z0-9$%']+", " ".join(a.q).lower()) if t not in STOP]
-if not terms: sys.exit("no search terms")
-src = {"youtube": "%YouTube%", "course": "%course%", "book": "%Book%"}.get(a.source, "%")
-q = ("SELECT rowid, source, title, date, url, snippet(chunks, 4, '**', '**', ' … ', 60) FROM chunks "
-     "WHERE chunks MATCH ? AND source LIKE ? ORDER BY bm25(chunks, 0, 2.0, 0, 0, 1.0) LIMIT ?")
-seen, titles, out = set(), set(), []
-for joiner in (" AND ", " OR "):                      # all-terms matches first, then any-term top-up
-    for r in db.execute(q, (joiner.join(f"\"{t}\"" for t in terms), src, a.n * 3)):
-        key = re.sub(r'\\W', '', r[2].lower())
-        if r[0] not in seen and key not in titles and len(out) < a.n: seen.add(r[0]); titles.add(key); out.append(r)
-for i, (_, s, t, d, u, snip) in enumerate(out, 1):
-    print(f"[{i}] {t}\n    {s}{' · ' + d if d else ''}\n    {u}\n    {snip}\n")
+#!/usr/bin/env bash
+# Wrapper: run the CLI with the project's venv (needed for semantic search).
+ROOT="$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)"
+exec "$ROOT/.venv/bin/python" "$ROOT/scripts/hormozi.py" "$@"
