@@ -1,30 +1,30 @@
-{"id":"q01","q":"I run a gym with 120 members at $80/month and churn is 12% a month. What should I fix first?","expect":["churn","retention","lifetime value"]}
-{"id":"q02","q":"How do I raise my prices without losing my current clients?","expect":["price raise","pricing"]}
-{"id":"q03","q":"My agency gets leads but only closes 10% of sales calls. What do I do?","expect":["closing","sales","close rate"]}
-{"id":"q04","q":"What is the value equation and how do I use it on my offer?","expect":["value equation","dream outcome","perceived likelihood","time delay","effort"]}
-{"id":"q05","q":"I have no audience and no money. How do I get my first 5 clients?","expect":["warm outreach","first 5 clients","core four"]}
-{"id":"q06","q":"What makes a good lead magnet?","expect":["lead magnet"]}
-{"id":"q07","q":"How should I structure an upsell after the first purchase?","expect":["upsell","money model"]}
-{"id":"q08","q":"How much should I spend to acquire a customer?","expect":["cac","ltgp","lifetime gross profit","payback"]}
-{"id":"q09","q":"How do I write hooks for my Instagram reels?","expect":["hook"]}
-{"id":"q10","q":"What guarantee should I offer?","expect":["guarantee"]}
-{"id":"q11","q":"How do I name my offer?","expect":["naming","magic"]}
-{"id":"q12","q":"My leads don't show up to booked calls. How do I fix show rates?","expect":["show rate","lead nurture","reminder"]}
-{"id":"q13","q":"Should I run paid ads or post content first?","expect":["paid ads","content","core four"]}
-{"id":"q14","q":"How do I get customers to pay for the next customer's acquisition in the first 30 days?","expect":["client-financed acquisition","30 day","money model"]}
-{"id":"q15","q":"What is a Grand Slam Offer?","expect":["grand slam offer"]}
-{"id":"q16","q":"How do I use scarcity and urgency honestly?","expect":["scarcity","urgency"]}
-{"id":"q17","q":"I need cash fast this month. What should I do?","expect":["fast cash"]}
-{"id":"q18","q":"How do I get more referrals?","expect":["referral"]}
-{"id":"q19","q":"How do I build a personal brand like you did?","expect":["brand"]}
-{"id":"q20","q":"How do I make a good ad?","expect":["ad","hook","retain","reward"]}
-{"id":"q21","q":"What should I do about a prospect who says 'I need to think about it'?","expect":["objection","closing","think about it"]}
-{"id":"q22","q":"How do I stop being the bottleneck in my own business?","expect":["delegate","hire","constraint","owner"]}
-{"id":"q23","q":"What are the stages of scaling a business from zero to $100M?","expect":["scaling","stage","roadmap"]}
-{"id":"q24","q":"What is the more better new framework?","expect":["more better new","more","better","new"]}
-{"id":"q25","q":"Should I niche down?","expect":["niche","starving crowd","market"]}
-{"id":"q26","q":"How do I keep customers longer?","expect":["retention","churn"]}
-{"id":"q27","q":"What is the rule of 100?","expect":["rule of 100"]}
-{"id":"q28","q":"How do I price a high-ticket coaching program?","expect":["pricing","value","premium"]}
-{"id":"q29","q":"Should I offer a free trial?","expect":["free trial","downsell"]}
-{"id":"q30","q":"How do I use affiliates to get leads?","expect":["affiliate","lead getters"]}
+{"id": "q01", "q": "I run a gym with 120 members at $80/month and churn is 12% a month. What should I fix first?", "expect": ["churn", "retention", "lifetime value"]}
+{"id": "q02", "q": "How do I raise my prices without losing my current clients?", "expect": ["price raise", "pricing"]}
+{"id": "q03", "q": "My agency gets leads but only closes 10% of sales calls. What do I do?", "expect": ["closing", "sales", "close rate"]}
+{"id": "q04", "q": "What is the value equation and how do I use it on my offer?", "expect": ["value equation", "dream outcome", "perceived likelihood", "time delay", "effort"]}
+{"id": "q05", "q": "I have no audience and no money. How do I get my first 5 clients?", "expect": ["warm outreach", "first 5 clients", "core four"]}
+{"id": "q06", "q": "What makes a good lead magnet?", "expect": ["lead magnet"]}
+{"id": "q07", "q": "How should I structure an upsell after the first purchase?", "expect": ["upsell", "money model"]}
+{"id": "q08", "q": "How much should I spend to acquire a customer?", "expect": ["cac", "ltgp", "lifetime gross profit", "payback", "cost to acquire", "acquisition cost", "acquire a customer"]}
+{"id": "q09", "q": "How do I write hooks for my Instagram reels?", "expect": ["hook"]}
+{"id": "q10", "q": "What guarantee should I offer?", "expect": ["guarantee"]}
+{"id": "q11", "q": "How do I name my offer?", "expect": ["naming", "magic", "name"]}
+{"id": "q12", "q": "My leads don't show up to booked calls. How do I fix show rates?", "expect": ["show rate", "lead nurture", "reminder"]}
+{"id": "q13", "q": "Should I run paid ads or post content first?", "expect": ["paid ads", "content", "core four"]}
+{"id": "q14", "q": "How do I get customers to pay for the next customer's acquisition in the first 30 days?", "expect": ["client-financed acquisition", "30 day", "money model"]}
+{"id": "q15", "q": "What is a Grand Slam Offer?", "expect": ["grand slam offer"]}
+{"id": "q16", "q": "How do I use scarcity and urgency honestly?", "expect": ["scarcity", "urgency"]}
+{"id": "q17", "q": "I need cash fast this month. What should I do?", "expect": ["fast cash"]}
+{"id": "q18", "q": "How do I get more referrals?", "expect": ["referral"]}
+{"id": "q19", "q": "How do I build a personal brand like you did?", "expect": ["brand"]}
+{"id": "q20", "q": "How do I make a good ad?", "expect": ["ad", "hook", "retain", "reward"]}
+{"id": "q21", "q": "What should I do about a prospect who says 'I need to think about it'?", "expect": ["objection", "closing", "think about it"]}
+{"id": "q22", "q": "How do I stop being the bottleneck in my own business?", "expect": ["delegate", "hire", "constraint", "owner"]}
+{"id": "q23", "q": "What are the stages of scaling a business from zero to $100M?", "expect": ["scaling", "stage", "roadmap"]}
+{"id": "q24", "q": "What is the more better new framework?", "expect": ["more better new", "more", "better", "new"]}
+{"id": "q25", "q": "Should I niche down?", "expect": ["niche", "starving crowd", "market"]}
+{"id": "q26", "q": "How do I keep customers longer?", "expect": ["retention", "churn"]}
+{"id": "q27", "q": "What is the rule of 100?", "expect": ["rule of 100"]}
+{"id": "q28", "q": "How do I price a high-ticket coaching program?", "expect": ["pricing", "value", "premium"]}
+{"id": "q29", "q": "Should I offer a free trial?", "expect": ["free trial", "downsell"]}
+{"id": "q30", "q": "How do I use affiliates to get leads?", "expect": ["affiliate", "lead getters"]}

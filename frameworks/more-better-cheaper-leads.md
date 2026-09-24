@@ -22,6 +22,7 @@ All else equal, doubling leads doubles the business. He points to advertising's 
 
 ## Sources
 - $100M Leads, pp. 8–11, 31–32
+- $100M Journal (handwritten concept notes), p. 224–225 (more leads: more volume on an existing channel or new channels; better leads: higher close % from more concentrated channels), p. 226 (better filters and targeted pressure)
 
 ## Related
 [[core-four]], [[lead-getters]]

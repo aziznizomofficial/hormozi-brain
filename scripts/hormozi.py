@@ -31,14 +31,52 @@ def semantic(q, kind, k):
     import numpy as np
     from fastembed import TextEmbedding
     V = np.load(vp).astype("float32"); ids = np.load(IDX / "vector_ids.npy")
-    qv = next(TextEmbedding("BAAI/bge-small-en-v1.5").query_embed([q])).astype("float32")
+    qv = embed_query(q)
     order = np.argsort(-(V @ qv))
     if kind == "%": return [int(ids[i]) for i in order[:k]]
     allowed = {i for (i,) in db.execute("SELECT id FROM meta WHERE kind LIKE ?", (kind,))}
     return [int(ids[i]) for i in order[:k * 20] if int(ids[i]) in allowed][:k]
 
+_model = None
+def embed_query(q):
+    global _model
+    from fastembed import TextEmbedding
+    _model = _model or TextEmbedding("BAAI/bge-small-en-v1.5")
+    return next(_model.query_embed([q])).astype("float32")
+
+def card_vectors():
+    """Embed each card's title + aliases + 'What it is' once; cached in index/cards.npz, rebuilt when cards change."""
+    import numpy as np
+    files = sorted((ROOT / "frameworks").glob("*.md")); cache = IDX / "cards.npz"
+    stamp = max((f.stat().st_mtime for f in files), default=0)
+    if cache.exists():
+        z = np.load(cache, allow_pickle=True)
+        if float(z["stamp"]) == stamp and len(z["slugs"]) == len(files): return list(z["slugs"]), list(z["titles"]), z["V"]
+    from fastembed import TextEmbedding
+    texts, slugs, titles = [], [], []
+    for f in files:
+        t = f.read_text(); secs = [re.search(rf"## {h}\s*(.*?)(?=\n## |\Z)", t, re.S) for h in ("What it is", "When to reach for it")]
+        texts.append(" ".join(t.splitlines()[:2]) + " " + " ".join(m.group(1) for m in secs if m)); slugs.append(f.stem); titles.append(t.splitlines()[0][2:])
+    global _model
+    _model = _model or TextEmbedding("BAAI/bge-small-en-v1.5")
+    V = np.vstack(list(_model.passage_embed(texts))).astype("float32")
+    np.savez(cache, stamp=stamp, slugs=np.array(slugs), titles=np.array(titles), V=V)
+    return slugs, titles, V
+
+def cards_for(q, k=3):
+    import numpy as np
+    slugs, titles, V = card_vectors()
+    if not slugs: return []
+    sims = V @ embed_query(q)
+    terms = {t[:5] for t in re.findall(r"[a-z0-9']+", q.lower()) if t not in STOP and len(t) > 2}
+    kw = np.array([len(terms & {w[:5] for w in re.findall(r"[a-z0-9']+", (s + " " + t).lower())}) for s, t in zip(slugs, titles)])
+    score = sims + 0.05 * kw
+    return [(float(score[i]), slugs[i], titles[i]) for i in np.argsort(-score)[:k]]
+
 def search(a):
     q, kind = " ".join(a.q), a.kind or "%"
+    cs = cards_for(q)
+    if cs: print("Framework cards (read first: hormozi frameworks <slug>):\n" + "\n".join(f"  {c[1]:32} {c[2]}" for c in cs) + "\n")
     lists = [keyword(q, kind, 60)] + ([semantic(q, kind, 60)] if a.mode == "hybrid" else [])
     score = {}
     for lst in lists:
