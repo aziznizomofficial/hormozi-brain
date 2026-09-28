@@ -2,3 +2,9 @@ sources/
 index/
 *.pyc
 .venv/
+build/
+.cache/
+skills/hormozi/.cache/
+skills/hormozi/.venv/
+books/
+dist/

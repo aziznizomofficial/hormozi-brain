@@ -16,10 +16,10 @@ import json, re, sqlite3, pathlib, subprocess, sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 db = sqlite3.connect(ROOT / "index/hormozi.db")
 Qs = [json.loads(l) for l in open(ROOT / "evals/questions.jsonl")]
-H = str(ROOT / "scripts/hormozi")
+H = str(ROOT / "scripts/library.py")
 
 def run(q, extra):
-    out = subprocess.run([H, "search", q, "-n", "8", *extra], capture_output=True, text=True).stdout
+    out = subprocess.run([str(ROOT / ".venv/bin/python"), H, "search", q, "-n", "8", *extra], capture_output=True, text=True).stdout
     return [int(i) for i in re.findall(r"^\[(\d+)\]", out, re.M)]
 
 def score(ids, expect):

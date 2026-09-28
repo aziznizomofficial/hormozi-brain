@@ -1,0 +1,10 @@
+{
+  "name": "hormozi-brain",
+  "version": "2.0.0",
+  "description": "Unofficial Alex Hormozi-style business advisor: a paraphrased, source-pointed map of his books, playbooks and ~2,000 videos. Four skills (answer, diagnose, offer, review) and a subagent. Not affiliated with Alex Hormozi or Acquisition.com.",
+  "author": { "name": "Aziz Nizom", "url": "https://github.com/aziznizomofficial" },
+  "homepage": "https://github.com/aziznizomofficial/hormozi-brain",
+  "repository": "https://github.com/aziznizomofficial/hormozi-brain",
+  "license": "MIT",
+  "keywords": ["business", "offers", "sales", "marketing", "hormozi", "skills"]
+}

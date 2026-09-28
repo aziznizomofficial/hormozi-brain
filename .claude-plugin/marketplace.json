@@ -1,0 +1,15 @@
+{
+  "name": "hormozi-brain",
+  "owner": { "name": "Aziz Nizom", "url": "https://github.com/aziznizomofficial" },
+  "metadata": { "description": "Hormozi Brain: an unofficial, source-pointed Alex Hormozi business advisor for Claude Code.", "version": "2.0.0" },
+  "plugins": [
+    {
+      "name": "hormozi-brain",
+      "source": "./",
+      "description": "Answer, diagnose, build offers and review assets the way Alex Hormozi would, citing book pages and video timestamps. Unofficial.",
+      "version": "2.0.0",
+      "license": "MIT",
+      "category": "business"
+    }
+  ]
+}

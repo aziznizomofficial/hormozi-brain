@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Wrapper so `hormozi` can sit on PATH as a symlink; hormozi.py switches to the skill's .venv itself when present.
+HERE="$(dirname "$(python3 -c 'import os,sys;print(os.path.realpath(sys.argv[1]))' "$0")")"
+exec python3 "$HERE/hormozi.py" "$@"

@@ -5,7 +5,7 @@ description: Build a Grand Slam Offer with Alex Hormozi's $100M Offers method �
 
 # Grand Slam Offer builder
 
-Same library and voice as `/hormozi` (read its SKILL.md and `references/voice.md`). CLI: `H=~/code/hormozi-brain/scripts/hormozi`. Before each step, read the matching framework card (`$H frameworks <slug>`) and cite its pages.
+Uses the same map and voice as the `hormozi` skill: read `../hormozi/SKILL.md` and `../hormozi/references/voice.md` (relative to this skill's folder) first. CLI: `h() { python3 "<this skill folder>/../hormozi/scripts/hormozi.py" "$@"; }` (the `hormozi` skill sits next to this one). Before each step, read the matching framework card (`h frameworks <slug>`) and cite its pages.
 
 Steps — show your work at each, and ask the user to confirm or correct before moving on when their input changes the result:
 1. **Market check** — is the market starving (pain, purchasing power, easy to target, growing)? Pick the niche.
@@ -18,4 +18,4 @@ Steps — show your work at each, and ask the user to confirm or correct before 
 8. **Enhancers** — scarcity, urgency, bonuses (each with its own value), guarantee type, name (use his naming formula).
 9. **Output** — one-page offer: headline name, who it's for, what they get (stack with values), price, guarantee, urgency, plus a 30-second verbal pitch. Save to `~/Documents/Hormozi Reports/offer-<name>-<date>.md`.
 
-Answer in the user's language; keep framework names in English.
+Answer in the user's language; keep framework names in English. Always run `h search` in English, whatever language the user writes in.

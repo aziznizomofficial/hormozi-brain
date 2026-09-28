@@ -5,12 +5,12 @@ description: Critique an ad, hook, offer, sales script, landing page, email or c
 
 # Hormozi review
 
-Same library and voice as `/hormozi` (read its SKILL.md and `references/voice.md`). CLI: `H=~/code/hormozi-brain/scripts/hormozi`.
+Uses the same map and voice as the `hormozi` skill: read `../hormozi/SKILL.md` and `../hormozi/references/voice.md` (relative to this skill's folder) first. CLI: `h() { python3 "<this skill folder>/../hormozi/scripts/hormozi.py" "$@"; }` (the `hormozi` skill sits next to this one).
 
-1. Identify what the asset is and pick the frameworks that judge it (`$H frameworks`): hooks → hooks cards; ads → GOATed ads (hook, retain, reward); offers → value equation + grand slam offer; sales calls → closing; pages/emails → value equation, proof, CTA, lead nurture.
+1. Identify what the asset is and pick the frameworks that judge it (`h frameworks`): hooks → hooks cards; ads → GOATed ads (hook, retain, reward); offers → value equation + grand slam offer; sales calls → closing; pages/emails → value equation, proof, CTA, lead nurture.
 2. Score each dimension 1–10 with one blunt sentence of reasoning each, citing the card's pages.
 3. List the three changes that would move the result most, in order.
 4. Rewrite the asset applying those changes. Keep the user's product facts; never invent proof, numbers or testimonials.
 5. Sources at the end.
 
-Blunt about the work, never about the person. Answer in the user's language.
+Blunt about the work, never about the person. Answer in the user's language. Always run `h search` in English, whatever language the user writes in.

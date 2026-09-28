@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# Wrapper: run the CLI with the project's venv (needed for semantic search).
-ROOT="$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)"
-exec "$ROOT/.venv/bin/python" "$ROOT/scripts/hormozi.py" "$@"
