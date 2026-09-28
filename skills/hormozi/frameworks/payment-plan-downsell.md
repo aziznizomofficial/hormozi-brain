@@ -32,7 +32,7 @@ High-ticket sales where price objections come up, new closers, and any business 
 - $100M Money Models, pp. 109–120 (downsell rules pp. 110–111); p. 167, p. 169 (Gym Lords step-downs)
 - Videos:
   - [10x Revenue with 1 New Sales Process (You Can Steal It) @ 25:30](https://www.youtube.com/watch?v=1UhvBSQFy6A&t=1530s)
-  - [How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE) @ 211:30](https://www.youtube.com/watch?v=JE2_7elAcxM&t=12690s)
+  - [How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE) @ 3:31:30](https://www.youtube.com/watch?v=JE2_7elAcxM&t=12690s)
   - [$100M Money Models Live Launch @ 42:00](https://www.youtube.com/watch?v=6_CCutkM11g&t=2520s)
 
 ## Related

@@ -37,7 +37,7 @@ Plays without their own card:
 
 ## Sources
 - $100M Pricing Playbook, p. 25-27, 33-35, 42-48, 61
-- Videos: [Make More Profit than 99% of People @ 00:00](https://www.youtube.com/watch?v=41EvCgwPrDc&t=0s); [If You Missed it... I'm Launching Live. Again @ 121:30](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=7290s); [Learn Email Marketing in 39 Minutes! @ 19:30](https://www.youtube.com/watch?v=pLhQOYMGa88&t=1170s)
+- Videos: [Make More Profit than 99% of People @ 00:00](https://www.youtube.com/watch?v=41EvCgwPrDc&t=0s); [If You Missed it... I'm Launching Live. Again @ 2:01:30](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=7290s); [Learn Email Marketing in 39 Minutes! @ 19:30](https://www.youtube.com/watch?v=pLhQOYMGa88&t=1170s)
 
 ## Related
 [[three-ways-to-grow]], [[billing-frequency]], [[processing-fee-second-payment]], [[automatic-continuity]], [[price-anchor]], [[warranty-upsell]], [[annual-price-increases]]

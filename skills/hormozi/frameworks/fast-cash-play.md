@@ -27,7 +27,7 @@ Example gym: 166 members paying $150 each month generate $300k in annual revenue
 - $100M Playbook: Fast Cash, pp. 4–17 (story, what/how/why, full playbook, sequences, examples), pp. 18–19 (every 90 days, ROI benchmarks), pp. 21–29 (checklist, sample emails/texts)
 - Videos:
   - [If you're struggling with cash flow, Watch This @ 04:30](https://www.youtube.com/watch?v=SvIcS-Q1Hl4&t=270s)
-  - [If You Missed it... I'm Launching Live. Again @ 120:00](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=7200s)
+  - [If You Missed it... I'm Launching Live. Again @ 2:00:00](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=7200s)
   - [14 Years of Actually Good Advice @ 24:00](https://www.youtube.com/watch?v=MPHn-nW30QU&t=1440s)
 
 ## Related

@@ -30,7 +30,7 @@ He sets the core-offer discount at roughly 10–30% of gross margin. A $5,000-va
 - Videos:
   - [KEYNOTE: Small To BIG. The Big 4 Customer Acquisition Models. @ 42:00](https://www.youtube.com/watch?v=XwZH-lOKG9c&t=2520s)
   - [Can I Save This Failing Theme Park in 90 Days? @ 15:00](https://www.youtube.com/watch?v=xRxVpjeHmeA&t=900s)
-  - [If You Missed it... I'm Launching Live. Again @ 64:30](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=3870s)
+  - [If You Missed it... I'm Launching Live. Again @ 1:04:30](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=3870s)
 
 ## Related
 [[money-model]], [[decoy-offer]], [[feature-downsell]], [[anchor-upsell]]

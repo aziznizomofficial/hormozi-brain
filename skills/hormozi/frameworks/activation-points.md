@@ -32,7 +32,7 @@ Churn is high and you don't know why, onboarding is generic, or ads bring in cus
 - Videos:
   - [I Tried This Simple Business Strategy for 60 Days. This is what happened @ 01:30](https://www.youtube.com/watch?v=yPDQCfrwh8E&t=90s)
   - [I Tried This Simple Business Strategy for 60 Days. This is what happened @ 16:30](https://www.youtube.com/watch?v=yPDQCfrwh8E&t=990s)
-  - [How to actually achieve anything | Hormozi Hotline @ 67:30](https://www.youtube.com/watch?v=-HbwUdqUcEs&t=4050s)
+  - [How to actually achieve anything | Hormozi Hotline @ 1:07:30](https://www.youtube.com/watch?v=-HbwUdqUcEs&t=4050s)
 
 ## Related
 [[churn-checklist]], [[fast-cash-play]], [[five-horsemen-of-retention]], [[trial-with-penalty]]

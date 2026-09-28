@@ -27,7 +27,7 @@ The timeshare rep reportedly grew his office's output 5x in the first year of th
 
 ## Sources
 - $100M Playbook: Lead Nurture, p. 26 (tactic list), p. 27 (weight-loss applications), p. 27–28 (timeshare story, five steps), p. 31 (summary), p. 38–40 (Jacob, yellows are the new gold), p. 44 (checklist)
-- Videos: [Sales Was Hard Until I Understood These 9 Concepts @ 48:00](https://www.youtube.com/watch?v=cy2k1GdA-9o&t=2880s) · [How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE) @ 124:30](https://www.youtube.com/watch?v=JE2_7elAcxM&t=7470s)
+- Videos: [Sales Was Hard Until I Understood These 9 Concepts @ 48:00](https://www.youtube.com/watch?v=cy2k1GdA-9o&t=2880s) · [How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE) @ 2:04:30](https://www.youtube.com/watch?v=JE2_7elAcxM&t=7470s)
 
 ## Related
 [[lead-nurture-personalization]], [[culture-of-execution]], [[speed-to-lead]]

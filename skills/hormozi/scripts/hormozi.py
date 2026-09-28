@@ -170,11 +170,24 @@ def search(a):
         print()
     all_terms, any_term = keyword(db, q, kinds, 80)
     lists = [(all_terms, 2.0), (any_term, 1.0)] + ([(semantic(db, q, kinds, 80), 2.0)] if mode == "hybrid" else [])
+    if cs:   # entries tagged with the matching framework cards, ranked by the question's own words
+        tagged = f"meta : ({' OR '.join(chr(34) + c.replace('-', ' ') + chr(34) for c in cs)})"
+        ts = terms(q); qry = f"{tagged} AND ({fts_query(ts, 'OR')})" if ts else tagged
+        srcs = ",".join(f"'{x}'" for x in kinds) if kinds else None
+        sql = ("SELECT doc.rowid FROM fts JOIN doc ON doc.rowid = fts.rowid WHERE fts MATCH ?" + (f" AND doc.src IN ({srcs})" if srcs else "")
+               + " ORDER BY bm25(fts, 1.0, 0.4) LIMIT 80")
+        lists.append(([i for (i,) in db.execute(sql, (qry,))], 1.5))
     score = {}
     for lst, w in lists:
         for r, i in enumerate(lst): score[i] = score.get(i, 0) + w / (60 + r)
+    ranked = sorted(score, key=lambda i: -score[i] * TIER_W.get(db.execute("SELECT tier FROM doc WHERE rowid=?", (i,)).fetchone()[0], 1))
+    if not a.kind:   # books are ~5% of entries; keep up to 2 of the best book hits (from the top 40) in view
+        books = [i for i in ranked[:40] if db.execute("SELECT src FROM doc WHERE rowid=?", (i,)).fetchone()[0] == "book"][:2]
+        rest = [i for i in ranked if i not in books]
+        for pos, b in zip((1, 4), books): rest.insert(min(pos, len(rest)), b)
+        ranked = rest
     shown, per = 0, {}
-    for i in sorted(score, key=lambda i: -score[i] * TIER_W.get(db.execute("SELECT tier FROM doc WHERE rowid=?", (i,)).fetchone()[0], 1)):
+    for i in ranked:
         did, kind, src, tier, body, js = db.execute("SELECT * FROM doc WHERE rowid=?", (i,)).fetchone(); o = json.loads(js)
         if a.kind == "case" and kind != "case": continue
         key = o.get("book") or o.get("video")

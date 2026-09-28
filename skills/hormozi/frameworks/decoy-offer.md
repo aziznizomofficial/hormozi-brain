@@ -28,7 +28,7 @@ Lead costs have risen and your existing offer has lost its appeal. You want inex
 - $100M Money Models, pp. 51–57; p. 166 and p. 169 (Gym Launch decoy: free DIY vs $16k done-with-you)
 - Videos:
   - [The Offer Is King (ALEX HORMOZI) @ 06:00](https://www.youtube.com/watch?v=pxVeOkOVr2w&t=360s)
-  - [If You Missed it... I'm Launching Live. Again @ 64:30](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=3870s)
+  - [If You Missed it... I'm Launching Live. Again @ 1:04:30](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=3870s)
 
 ## Related
 [[anchor-upsell]], [[feature-downsell]], [[money-model]], [[giveaway-offer]]

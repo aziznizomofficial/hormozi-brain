@@ -46,9 +46,16 @@ def copy_ok(text, grams, stats):
 def grams6(s):
     w = D.words(s); return {" ".join(w[i:i + 6]) for i in range(len(w) - 5)}
 
+ALIASES = json.loads((pathlib.Path(__file__).parent / "card_aliases.json").read_text()) if (pathlib.Path(__file__).parent / "card_aliases.json").exists() else {}
+
 def clean_fw(fws, slugs):
-    known = [f for f in fws or [] if f in slugs]
-    new = [f for f in fws or [] if isinstance(f, str) and f.startswith("new:")]
+    """Keep known card slugs; map "new:<Name>" tags to cards drafted later (card_aliases.json); report the rest."""
+    fws = [f for f in (fws if isinstance(fws, list) else []) if isinstance(f, str)]   # models sometimes emit objects here
+    known = [f for f in fws if f in slugs]
+    new = [f for f in fws if f.startswith("new:")]
+    for f in new:
+        s = ALIASES.get(re.sub(r"[^a-z0-9]+", " ", f[4:].lower()).strip())
+        if s in slugs and s not in known: known.append(s)
     return known, new
 
 def videos(run, model, slugs, st, newnames):
@@ -59,7 +66,8 @@ def videos(run, model, slugs, st, newnames):
         if not u: continue
         out = r["out"]; grams = grams6(u["text"]); keys = u["labels"]
         ctx = [re.sub(r"^\[[\d:]+\] ", "", x) for x in u["text"].split("\n\n")]
-        cl = [c for c in out.get("claims", []) if c.get("text") and copy_ok(c["text"], grams, st)]
+        cl = [c for c in out.get("claims", []) if isinstance(c, dict) and isinstance(c.get("text"), str) and c["text"].strip() and copy_ok(c["text"], grams, st)]
+        for c in cl: c["t"] = [t for t in (c.get("t") if isinstance(c.get("t"), list) else [c.get("t")]) if isinstance(t, str)]
         cl = gate_pointers(model, cl, keys, ctx, lambda c: c.get("t") or [], lambda c, v: c.__setitem__("t", v), st)
         base = {"src": u["kind"], "tier": TIER[u["kind"]], "title": u["title"], "channel": CHANNEL[u["kind"]], "date": u["date"], "video": u["video_id"]}
         for n, c in enumerate(cl, 1):
@@ -67,6 +75,9 @@ def videos(run, model, slugs, st, newnames):
             claims.append({"id": f"{u['id']}#{n}", "text": c["text"].strip(), "type": c.get("type", ""), "frameworks": fw, **base,
                            "at": c["t"][0], "url": u["urls"][c["t"][0]], **({"also_at": c["t"][1:]} if len(c["t"]) > 1 else {})})
         for n, c in enumerate(out.get("cases", []), 1):
+            if not isinstance(c, dict): continue
+            c["advice"] = [a for a in (c.get("advice") if isinstance(c.get("advice"), list) else [c.get("advice")]) if isinstance(a, str)]
+            c["t"] = [t for t in (c.get("t") if isinstance(c.get("t"), list) else []) if isinstance(t, str) and t in u["urls"]]
             txt = " ".join([c.get("question", ""), c.get("diagnosis", "")] + list(c.get("advice", [])))
             if not copy_ok(txt, grams, st) or not c.get("t"): continue
             cases.append({"id": f"{u['id']}#case{n}", "business": c.get("business", ""), "numbers": c.get("numbers", ""), "question": c.get("question", ""),
@@ -89,7 +100,7 @@ def books(run, model, slugs, st, newnames):
         # headings are titles and may be reproduced (e.g. "Seven Steps To Creating an Effective Lead Magnet, step 1: …")
         heads = " ".join(s.get("heading", "") for s in out.get("sections", [])) + " " + " ".join(c.get("section", "") for c in out.get("claims", []))
         grams = grams6(u["text"]) - grams6(heads)
-        cl = [c for c in out.get("claims", []) if c.get("text") and copy_ok(c["text"], grams, st)]
+        cl = [c for c in out.get("claims", []) if isinstance(c, dict) and isinstance(c.get("text"), str) and c["text"].strip() and copy_ok(c["text"], grams, st)]
         cl = gate_pointers(model, cl, keys, ctx, lambda c: [c["page"]] if c.get("page") else [], lambda c, v: c.__setitem__("page", v[0]), st)
         for n, c in enumerate(cl, 1):
             fw, new = clean_fw(c.get("frameworks"), slugs); newnames.update(new)

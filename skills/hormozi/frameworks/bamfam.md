@@ -30,7 +30,7 @@ None. In his insurance-company example, this one change sharply raised second-ca
 - $100M Playbook: Lead Nurture, p. 36 (insurance acquisition story, how it works, volume summary), p. 40 (BAMFAM in sales culture), p. 45 (checklist)
 - $100M Money Models, pp. 82–83 (BAMFAM as an upsell habit), p. 38 (required meetings as offer moments), p. 127 (mandatory trial check-ins)
 - $100M Playbook: Retention, p. 21 (customers always know when you'll speak next), pp. 29–30 (1:1 reach-outs every 2–3 weeks)
-- Videos: [How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE) @ 84:00](https://www.youtube.com/watch?v=JE2_7elAcxM&t=5040s) · [Watch this to keep more customers @ 13:30](https://www.youtube.com/watch?v=afbP6sB_Atc&t=810s) · [The Ultimate Sales Training for 2026 [Full Course] @ 109:30](https://www.youtube.com/watch?v=StVqS0jD7Ls&t=6570s)
+- Videos: [How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE) @ 1:24:00](https://www.youtube.com/watch?v=JE2_7elAcxM&t=5040s) · [Watch this to keep more customers @ 13:30](https://www.youtube.com/watch?v=afbP6sB_Atc&t=810s) · [The Ultimate Sales Training for 2026 [Full Course] @ 1:49:30](https://www.youtube.com/watch?v=StVqS0jD7Ls&t=6570s)
 
 ## Related
 [[follow-up-cadence]], [[four-pillars-of-lead-nurture]], [[culture-of-execution]], [[classic-upsell]], [[win-your-money-back]], [[trial-with-penalty]], [[churn-checklist]]

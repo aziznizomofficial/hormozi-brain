@@ -29,7 +29,7 @@ Spread example: $600 of discount ÷ 12 = $50/month (p. 156). A rice seller charg
 - $100M Money Models, pp. 153–160; p. 167 (frontloaded free time in Gym Lords)
 - Videos:
   - [$100M Money Models Live Launch @ 46:30](https://www.youtube.com/watch?v=6_CCutkM11g&t=2790s)
-  - [If You Missed it... I'm Launching Live. Again @ 76:30](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=4590s)
+  - [If You Missed it... I'm Launching Live. Again @ 1:16:30](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=4590s)
 
 ## Related
 [[buy-x-get-y-free]], [[waived-fee-offer]], [[four-week-billing]], [[cancellation-save-call]], [[continuity-bonus-offer]]

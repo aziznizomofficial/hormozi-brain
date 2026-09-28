@@ -27,7 +27,7 @@ Worked example: 100 leads × 50% schedule rate = 50 booked; × 50% show rate = 2
 
 ## Sources
 - $100M Playbook: Lead Nurture, p. 7–9 (ALAN story, four data findings, definitions and worked example), p. 10 (why it matters, scope), p. 11 (four pillars), p. 41–42 (execution summary), p. 44–45 (checklist)
-- Videos: [How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE) @ 132:00](https://www.youtube.com/watch?v=JE2_7elAcxM&t=7920s) · [If you're not unbelievably rich yet, this is why @ 21:00](https://www.youtube.com/watch?v=h6y0nYVZgwE&t=1260s) · [The Ultimate Sales Training for 2026 [Full Course] @ 15:00](https://www.youtube.com/watch?v=StVqS0jD7Ls&t=900s)
+- Videos: [How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE) @ 2:12:00](https://www.youtube.com/watch?v=JE2_7elAcxM&t=7920s) · [If you're not unbelievably rich yet, this is why @ 21:00](https://www.youtube.com/watch?v=h6y0nYVZgwE&t=1260s) · [The Ultimate Sales Training for 2026 [Full Course] @ 15:00](https://www.youtube.com/watch?v=StVqS0jD7Ls&t=900s)
 
 ## Related
 [[appointment-availability]], [[speed-to-lead]], [[lead-nurture-personalization]], [[follow-up-cadence]], [[culture-of-execution]]

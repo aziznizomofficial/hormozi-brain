@@ -103,6 +103,17 @@ def call(backend, prompt, workdir):
         txt = of.read_text(); of.unlink()
         m = re.search(r"tokens used\s*\n?\s*([\d,]+)", r.stderr + r.stdout)
         return txt, {"total_tokens": int(m.group(1).replace(",", "")) if m else None}
+    if kind == "claude":   # headless Claude Code, stripped: no tools/MCP/skills/settings, tiny system prompt (~400 tokens overhead)
+        model, _, effort = rest.partition(":")
+        mcp = workdir / "empty-mcp.json"; mcp.exists() or mcp.write_text('{"mcpServers":{}}')
+        cmd = ["claude", "-p", "--model", model, "--tools", "", "--strict-mcp-config", "--mcp-config", str(mcp), "--disable-slash-commands",
+               "--setting-sources", "", "--no-session-persistence", "--output-format", "json",
+               "--system-prompt", "You turn source text into the exact JSON the user asks for. Reply with the JSON object only."]
+        if effort: cmd += ["--effort", effort]
+        r = subprocess.run(cmd, input=prompt, cwd=workdir, capture_output=True, text=True, timeout=1500)
+        d = json.loads(r.stdout)
+        if d.get("is_error"): raise RuntimeError(f"claude: {str(d.get('result'))[:300]}")
+        return d["result"], {**d.get("usage", {}), "cost_usd": d.get("total_cost_usd")}
     if kind == "gemini-api":   # Google AI Studio key (GEMINI_API_KEY), no agent overhead; JSON mode
         import urllib.request
         key = os.environ.get("GEMINI_API_KEY") or subprocess.run(["llm-key", "get", "GEMINI_API_KEY"], capture_output=True, text=True).stdout.strip()

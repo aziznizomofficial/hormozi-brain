@@ -28,7 +28,7 @@ Price the bonus-only one-time option relative to the monthly membership. Rough s
 - Videos:
   - [$100M Money Models Live Launch @ 21:00](https://www.youtube.com/watch?v=6_CCutkM11g&t=1260s)
   - [$100M Money Models Live Launch @ 46:30](https://www.youtube.com/watch?v=6_CCutkM11g&t=2790s)
-  - [If You Missed it... I'm Launching Live. Again @ 76:30](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=4590s)
+  - [If You Missed it... I'm Launching Live. Again @ 1:16:30](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=4590s)
 
 ## Related
 [[continuity-discount-offer]], [[waived-fee-offer]], [[money-model]], [[annual-pricing-options]]

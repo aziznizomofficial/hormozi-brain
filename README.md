@@ -12,10 +12,10 @@ A paraphrased, source-pointed map of his work:
 
 | | Entries | Points to |
 |---|---|---|
-| Framework cards | {{CARDS}} named models: steps, math, mistakes | book pages + video timestamps |
-| Book & playbook ideas | {{BOOK_CLAIMS}} from 16 titles | book, page, section heading |
-| Video ideas | {{VIDEO_CLAIMS}} from {{VIDEOS}} videos: his channel, guest interviews, Acquisition.com, coaching calls | YouTube link at the exact second |
-| Real business cases | {{CASES}}: the numbers, his diagnosis, his fix | YouTube link at the exact second |
+| Framework cards | 135 named models: steps, math, mistakes | book pages + video timestamps |
+| Book & playbook ideas | 1,031 from 16 titles | book, page, section heading |
+| Video ideas | 19,212 from 1,982 videos: his channel, guest interviews, Acquisition.com, coaching calls | YouTube link at the exact second |
+| Real business cases | 2,123: the numbers, his diagnosis, his fix | YouTube link at the exact second |
 | Video maps | a topic line for every ~90 seconds of every video | YouTube link |
 
 ## Install
@@ -57,13 +57,18 @@ hormozi verify <id>         # the original words: live YouTube captions, or your
 
 ## How it was built, and how good it is
 
-The maintainer distilled his own copies of the books and ~2,000 videos' captions into short paraphrased entries (books with Codex; videos with Gemini Flash and Codex; Claude orchestrating and reviewing). Two automated gates run on everything that ships: entries that repeat 8+ consecutive words of the source are dropped, and every pointer is checked against the passage it cites. Details in [ARCHITECTURE.md](ARCHITECTURE.md).
+The maintainer distilled his own copies of the books and ~2,000 videos' captions into short paraphrased entries. Models were picked by pilot (pointer accuracy, copying, faithfulness): books with Codex, videos with Codex, Gemini Flash, Claude Sonnet 4.6 and Sonnet 5.5, all working one shared queue from separate terminals, with Claude orchestrating, running the gates and auditing. Two automated gates run on everything that ships: entries that repeat 8+ consecutive words of the source are dropped, and every pointer is checked against the passage it cites. Details in [ARCHITECTURE.md](ARCHITECTURE.md).
 
 Benchmark: 30 real business questions (`evals/`), top 8 results each.
 
 | | On-topic results | Questions well covered | Has a book page | Citation leads to on-topic original |
 |---|---|---|---|---|
-{{BENCH}}
+| This map, keyword search (default, no setup) | 76% | 27/30 | 30/30 | 71% |
+| This map, meaning-based search (`--semantic`) | 78% | 28/30 | 29/30 | 76% |
+| Maintainer's private full-text library (reference, not shipped) | 79% | 30/30 | 28/30 | — |
+| MoreMozi transcripts only (what the largest public Hormozi repos ship) | 63% | 23/30 | 0/30 | — |
+
+An independent reviewer (Claude) checked 80 random entries against the originals: 74 fully supported, 6 partly supported (a small overreach), 0 unsupported.
 
 ## Limits
 

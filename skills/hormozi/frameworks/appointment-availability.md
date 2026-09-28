@@ -26,7 +26,7 @@ Seven days vs five is about 40% more capacity to take money. He reports that the
 
 ## Sources
 - $100M Playbook: Lead Nurture, p. 13–14 (nail-salon story, data finding, why bad-time bookings ghost), p. 15–16 (worth the cost; days, hours, flexible slots), p. 16–18 (booking channels, scheduler tips, adding friction), p. 44 (checklist)
-- Videos: [I Doubled A Business in 60 Days to Show It's Not Luck (Part 1) @ 04:30](https://www.youtube.com/watch?v=c_6BrF7jOGk&t=270s) · [The Ultimate Sales Training for 2026 [Full Course] @ 01:30](https://www.youtube.com/watch?v=StVqS0jD7Ls&t=90s) · [How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE) @ 79:30](https://www.youtube.com/watch?v=JE2_7elAcxM&t=4770s)
+- Videos: [I Doubled A Business in 60 Days to Show It's Not Luck (Part 1) @ 04:30](https://www.youtube.com/watch?v=c_6BrF7jOGk&t=270s) · [The Ultimate Sales Training for 2026 [Full Course] @ 01:30](https://www.youtube.com/watch?v=StVqS0jD7Ls&t=90s) · [How to Sell Better than 99% Of People (4 HOUR ULTIMATE GUIDE) @ 1:19:30](https://www.youtube.com/watch?v=JE2_7elAcxM&t=4770s)
 
 ## Related
 [[four-pillars-of-lead-nurture]], [[speed-to-lead]], [[follow-up-cadence]]

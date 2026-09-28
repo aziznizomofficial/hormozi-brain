@@ -30,7 +30,7 @@ Customers churn right after their first block ends, you face refund requests, yo
 - $100M Money Models, pp. 101–107; pp. 37–38 (applying WYMB credit), p. 159 (rollover during exit interviews), p. 170
 - Videos:
   - [Making Money is a Game (Here's the Cheat Code) @ 19:30](https://www.youtube.com/watch?v=nSQdjim8CsE&t=1170s)
-  - [If You Missed it... I'm Launching Live. Again @ 69:00](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=4140s)
+  - [If You Missed it... I'm Launching Live. Again @ 1:09:00](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=4140s)
   - [7 Ways to Get People to Buy More Times @ 04:30](https://www.youtube.com/watch?v=sPkMHh8zTMI&t=270s)
 
 ## Related

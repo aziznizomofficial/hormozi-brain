@@ -25,7 +25,7 @@ The reading course that taught him this: $0 today and $297 billed tomorrow unles
 ## Sources
 - $100M Money Models, pp. 66–70; p. 129 (vs Trial With Penalty), p. 170 (newsletter model)
 - Videos:
-  - [If You Missed it... I'm Launching Live. Again @ 64:30](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=3870s)
+  - [If You Missed it... I'm Launching Live. Again @ 1:04:30](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=3870s)
 
 ## Related
 [[trial-with-penalty]], [[win-your-money-back]], [[money-model]], [[continuity-discount-offer]]

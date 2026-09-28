@@ -32,7 +32,7 @@ A business can only grow by getting more customers, raising what each purchase i
 - $100M Offers, p. 39-41
 - $100M Pricing Playbook, p. 7-17
 - $100M Offers Lost Chapter, p. 8
-- Videos: [A Magic Business Genie Grants You 3 Wishes... @ 00:00](https://www.youtube.com/watch?v=_ArQlwPvGUA&t=0s); [KEYNOTE: Small To BIG. The Big 4 Customer Acquisition Models. @ 61:30](https://www.youtube.com/watch?v=XwZH-lOKG9c&t=3690s); [Make More Profit than 99% of People @ 00:00](https://www.youtube.com/watch?v=41EvCgwPrDc&t=0s)
+- Videos: [A Magic Business Genie Grants You 3 Wishes... @ 00:00](https://www.youtube.com/watch?v=_ArQlwPvGUA&t=0s); [KEYNOTE: Small To BIG. The Big 4 Customer Acquisition Models. @ 1:01:30](https://www.youtube.com/watch?v=XwZH-lOKG9c&t=3690s); [Make More Profit than 99% of People @ 00:00](https://www.youtube.com/watch?v=41EvCgwPrDc&t=0s)
 
 ## Related
 [[value-based-pricing]], [[instant-profit-pricing-playbook]], [[pricing-rules]], [[virtuous-cycle-of-price]], [[ltgp-to-cac]]

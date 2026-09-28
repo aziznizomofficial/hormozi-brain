@@ -28,7 +28,7 @@ Most buyers take your core offer and nobody takes the premium tier. You suspect 
 - Videos:
   - [How TO Make A TON Of Money (in just a few minutes) @ 01:30](https://www.youtube.com/watch?v=yEKu6q0W3gs&t=90s)
   - [The Best SALES TRAINING On The Internet @ 09:00](https://www.youtube.com/watch?v=NcD2t9qt-fM&t=540s)
-  - [If You Missed it... I'm Launching Live. Again @ 69:00](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=4140s)
+  - [If You Missed it... I'm Launching Live. Again @ 1:09:00](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=4140s)
 
 ## Related
 [[ten-x-the-ten-percent]], [[decoy-offer]], [[feature-downsell]], [[classic-upsell]]

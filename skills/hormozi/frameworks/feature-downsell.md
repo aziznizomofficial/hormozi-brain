@@ -28,7 +28,7 @@ Removing things they dislike with a big price drop means more people take the do
 - $100M Money Models, pp. 131–139; pp. 110–111 (downsell rules), p. 167, p. 170
 - $100M Playbook: Lifetime Value, pp. 21–24 (quantity and quality downsells)
 - Videos:
-  - [The Ultimate Sales Training for 2026 [Full Course] @ 151:30](https://www.youtube.com/watch?v=StVqS0jD7Ls&t=9090s)
+  - [The Ultimate Sales Training for 2026 [Full Course] @ 2:31:30](https://www.youtube.com/watch?v=StVqS0jD7Ls&t=9090s)
   - [How To Close Everyone Downselling Like A Pro (ALEX HORMOZI) @ 06:00](https://www.youtube.com/watch?v=gza5RtQCVsA&t=360s)
   - [$100M Money Models Live Launch @ 42:00](https://www.youtube.com/watch?v=6_CCutkM11g&t=2520s)
 

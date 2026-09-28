@@ -30,7 +30,7 @@ Upsells fail when the offer isn't wanted (too unrelated), comes too early (befor
 - $100M Money Models, pp. 75–85; p. 167 and p. 169 (Gym Lords upsell)
 - Videos:
   - [Making Money is a Game (Here's the Cheat Code) @ 19:30](https://www.youtube.com/watch?v=nSQdjim8CsE&t=1170s)
-  - [If You Missed it... I'm Launching Live. Again @ 67:30](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=4050s)
+  - [If You Missed it... I'm Launching Live. Again @ 1:07:30](https://www.youtube.com/watch?v=B2QbLzHvKbg&t=4050s)
 
 ## Related
 [[menu-upsell]], [[anchor-upsell]], [[rollover-upsell]], [[bamfam]], [[crazy-eight]]
